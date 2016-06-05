@@ -46,5 +46,5 @@ workspace_z=[workspace_z;z];
 end
 plot3(workspace_x,workspace_y,workspace_z);
 grid on;
-title('第一关节转动,其余关节固定');
+title('Rotate First Joint');
 
