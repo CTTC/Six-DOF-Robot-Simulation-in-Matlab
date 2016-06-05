@@ -1,10 +1,4 @@
-%% General Information
-% Function: Perform forward and inverse kinematics for a six-DOF robot
-% Author: Tao Chen
-% E-mail:chentao904@163.com
-% Department:School of Mechanical Engineering, 
-%            Shanghai Jiao Tong University
-% Date:June 28th,2015
+
 %% Initialization
 clear all;clc;close all;
 L(1)=Link([0,0,0,-pi/2,0]);
@@ -113,7 +107,7 @@ for j=1:size(Ts,3)
     hold on;
     plot2(tt(j,:),'r.');
 end
-title('ֱ�߹켣','Fontsize',20);
+title('Linear Trajectory','Fontsize',20);
 
 %% Spiral Line Trajectory
 t=0:0.5:6*pi;
@@ -134,4 +128,4 @@ plot3(x,y,z,'b');
 hold on;
 q=six_link.ikine6s(T);
 six_link.plot(q);
-title('Spline Trajectory','Fontsize',20);
+title('Spiral Trajectory','Fontsize',20);
