@@ -1,10 +1,4 @@
-%% General Information
-% Function: Perform forward and inverse kinematics for our own robot
-% Author: 陈涛
-% E-mail:chentao904@163.com
-% Department:School of Mechanical Engineering, 
-%            Shanghai Jiao Tong University
-% Date:June 27th,2015
+
 %% Initialization
 clear all;clc;close all;
 syms theta1 theta2 theta3 theta4 theta5 theta6
@@ -26,12 +20,12 @@ A3=A(:,:,3);
 A4=A(:,:,4);
 A5=A(:,:,5);
 A6=A(:,:,6);
-T6=A1*A2*A3*A4*A5*A6;  %第六关节处相对基坐标的变换矩阵
-T5=A1*A2*A3*A4*A5;     %第五关节处相对基坐标的变换矩阵
-T4=A1*A2*A3*A4;        %第四关节处相对基坐标的变换矩阵
-T3=A1*A2*A3;           %第三关节处相对基坐标的变换矩阵
-T2=A1*A2;              %第二关节处相对基坐标的变换矩阵
-T1=A1;                 %第一关节处相对基坐标的变换矩阵
+T6=A1*A2*A3*A4*A5*A6;  
+T5=A1*A2*A3*A4*A5;     
+T4=A1*A2*A3*A4;        
+T3=A1*A2*A3;           
+T2=A1*A2;              
+T1=A1;                 
 
 ZeroTSix=T6;
 OneTSix=A2*A3*A4*A5*A6;
